@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ITodo } from '../todo';
 
 @Component({
   selector: 'app-todo-item',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent {
+  @Input() todo?: ITodo;
 
+  todos= ["Estudiar", "Jugar"];
 }

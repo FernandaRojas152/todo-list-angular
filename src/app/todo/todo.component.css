@@ -1,0 +1,32 @@
+:root{
+    --primary-color: #ffff;
+    --border-color: #e5e6eb;
+}
+
+h3{
+    font-family: 'Century Gothic';
+    font-weight: 600;
+    margin-left: 20px;
+}
+.container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todos-box{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 500px;
+    height: 700px;
+    box-shadow: 3px 7px 33px 4px #E9EBEC;
+    border-radius: 6px;
+    border: 1px solid #e5e6eb;
+}
+
+li{
+    list-style-type: circle;
+}

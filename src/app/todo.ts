@@ -1,4 +1,4 @@
-export interface Todo {
+export interface ITodo {
     name: String,
     date: String,
     badges: [],
