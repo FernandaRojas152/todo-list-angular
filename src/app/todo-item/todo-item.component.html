@@ -1,8 +1,10 @@
-<section class="info-todos">
-    <p>{{todo!.name}} </p>
-    <p>{{todo!.date}}</p>
-</section>
-<aside class="badges-todos">
-    <p *ngFor="let t of todo!.badges"
-    class="badges-todos__badge badges-todos__badge--color badges-todos__badge badges-todos__badge--font">{{t}}</p>
-</aside>
+<div class="container">
+    <section class="info-todos info-todos--font">
+        <p>{{todo!.name}} </p>
+        <p class="info-todos__date info-todos__date--date-font">{{todo!.date}}</p>
+    </section>
+    <aside class="badges-todos">
+        <p *ngFor="let t of todo!.badges"
+        class="badges-todos__badge badges-todos__badge--color badges-todos__badge badges-todos__badge--font">{{t}}</p>
+    </aside>
+</div>

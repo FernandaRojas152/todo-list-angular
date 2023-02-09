@@ -1,5 +1,28 @@
 @import "../../styles.scss";
 
+.container{
+    @include flex(flex-start, space-between, row);
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.info-todos{
+    &--font{
+        font-family: $font-main;
+        color: $font-color;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &--font::before{
+        content: '⭕'; //dummy icon meanwhile
+    }
+    &date{
+        &--date-font{
+            font-weight: lighter;
+        }
+    }
+}
 .badges-todos{
     &__badge{
         display: inline-block;
@@ -10,6 +33,7 @@
             font-family: $font-main;
             font-size: 12px;
             font-weight: bold;
+            color: $font-color;
         }
 
         border-radius: 2px;

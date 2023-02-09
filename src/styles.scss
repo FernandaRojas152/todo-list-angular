@@ -2,6 +2,7 @@
 $btn: #3a3a3c;
 $primary-color: #ffff;
 $border-color: #e5e6eb;
+$font-color: #1E2021;
 $badges: #F1F2F6;
 
 @font-face {
@@ -9,6 +10,13 @@ $badges: #F1F2F6;
     src: url("./assets/fonts/Trueno.otf") format("Open Type");
 }
 $font-main: 'Trueno', sans-serif;
+
+@mixin flex($justify: flex-start, $align: flex-start, $direction: row, $wrap: wrap) {
+    align-items: $align;
+    display: flex;
+    justify-content: $justify;
+    flex-flow: $direction $wrap;
+}
 
 html {
     margin: 0;

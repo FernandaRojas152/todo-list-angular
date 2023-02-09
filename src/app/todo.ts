@@ -8,19 +8,19 @@ export interface ITodo {
 export let todos: ITodo[]=[
     {
         name: 'Learn React',
-        date: '2020-01-01',
+        date: 'Tomorrow',
         badges: ['work', 'personal'],
         isCompleted: false,
     },
     {
         name: 'Learn Redux',
-        date: '2020-01-01',
+        date: 'Friday',
         badges: ['work'],
         isCompleted: false,
     },
     {
         name: 'Learn Node',
-        date: '2020-01-01',
+        date: 'Today',
         badges: ['personal'],
         isCompleted: false,
     },
