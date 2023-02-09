@@ -1,6 +1,9 @@
-:root{
-    --primary-color: #ffff;
-    --border-color: #e5e6eb;
+
+@mixin flex($justify: flex-start, $align: flex-start, $direction: row, $wrap: wrap) {
+    align-items: $align;
+    display: flex;
+    justify-content: $justify;
+    flex-flow: $direction $wrap;
 }
 
 h3{
@@ -9,11 +12,13 @@ h3{
     margin-left: 20px;
 }
 .container{
+    @include flex(center, center);
     margin-top: 50px;
+    /* margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 .todos-box{
@@ -29,4 +34,10 @@ h3{
 
 li{
     list-style-type: circle;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

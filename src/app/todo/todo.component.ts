@@ -6,7 +6,7 @@ import { loadTodos } from '../state/actions/todos.actions';
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
-  styleUrls: ['./todo.component.css']
+  styleUrls: ['./todo.component.scss']
 })
 export class TodoComponent implements OnInit{
   todos= ["Estudiar", "Jugar"];
