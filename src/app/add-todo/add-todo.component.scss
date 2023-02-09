@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import "../../styles.scss";
-
+.inactive{
+    display: none;
+}
 .header-container {
     &__add-todo-btn {
             &--black-bg{
