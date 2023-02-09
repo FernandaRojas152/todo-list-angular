@@ -1,10 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-:root {}
-
 $btn: #3a3a3c;
 $primary-color: #ffff;
 $border-color: #e5e6eb;
-$badges: #e9ebec;
+$badges: #F1F2F6;
+
+@font-face {
+    font-family: 'Trueno';
+    src: url("./assets/fonts/Trueno.otf") format("Open Type");
+}
+$font-main: 'Trueno', sans-serif;
 
 html {
     margin: 0;
