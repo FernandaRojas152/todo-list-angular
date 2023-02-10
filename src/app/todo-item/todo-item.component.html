@@ -1,10 +1,15 @@
-<div class="container">
-    <section class="info-todos info-todos--font">
+<section class="container ">
+    <span class="bubbles"></span>
+    <div class="info-todos info-todos--font">
         <p>{{todo!.name}} </p>
-        <p class="info-todos__date info-todos__date--date-font">{{todo!.date}}</p>
-    </section>
-    <aside class="badges-todos">
+        <p class="todos-date todos-date--font">{{todo!.date}}</p>
+
+    </div>
+
+    <div class="badges-todos badges-todos--font">
         <p *ngFor="let t of todo!.badges"
-        class="badges-todos__badge badges-todos__badge--color badges-todos__badge badges-todos__badge--font">{{t}}</p>
-    </aside>
-</div>
+            class="badges-todos__badge badges-todos__badge--color badges-todos__badge">
+            {{t}}
+        </p>
+    </div>
+</section>

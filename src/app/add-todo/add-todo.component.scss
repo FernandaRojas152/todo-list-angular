@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import "../../styles.scss";
-.inactive{
+
+.inactive {
     display: none;
 }
+
+$text-color-button: #f7f9fa;
+$border-color-button: #1E1E20;
+
 .header-container {
     &__add-todo-btn {
-            &--black-bg{
-                background-color: $btn;
-                
-            }
-        font-family: 'Roboto', sans-serif;
-        color: #f7f9fa;
+        font-family: $font-secondary;
+        color: $text-color-button;
+        font-size: 13px;
+        border: 1px solid $border-color-button;
         border-radius: 5px;
-        
+        margin-right: 12px;
         cursor: pointer;
         text-align: center;
-        width: 130px;
-        height: 35px;
+        width: 140px;
+        height: 38px;
+
+        &--black-bg {
+            background-color: $btn;
+        }
+
     }
 }

@@ -1,43 +1,61 @@
 @import "../../styles.scss";
 
-.container{
-    @include flex(flex-start, space-between, row);
+.container {
+    display: flex;
+    align-items: center;
     border: 1px solid $border-color;
     border-radius: 5px;
-    margin: 15px;
+    padding: 4px;
+    margin: 0px 12px 12px;
 }
 
-.info-todos{
-    &--font{
+.info-todos {
+    margin-left: 20px;
+    flex-grow: 1;
+
+    &--font {
         font-family: $font-main;
         color: $font-color;
         font-size: 16px;
         font-weight: bold;
     }
-    &--font::before{
-        content: '⭕'; //dummy icon meanwhile
-    }
-    &date{
-        &--date-font{
+
+    .todos-date {
+        &--font {
+            font-family: $font-secondary;
             font-weight: lighter;
         }
     }
 }
-.badges-todos{
-    &__badge{
-        display: inline-block;
-        &--color{
-            background-color: $badges;
-        }
-        &--font{
-            font-family: $font-main;
-            font-size: 12px;
-            font-weight: bold;
-            color: $font-color;
-        }
 
-        border-radius: 2px;
-        padding: 5px 5px;
+.bubbles {
+    @include flex(center, center);
+    cursor: pointer;
+    margin-left: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 3px solid $work-badge-color;
+}
+
+.badges-todos {
+    cursor: default;
+    margin-left: 10px;
+    &--font {
+        font-family: $font-main;
+        font-size: 12px;
+        font-weight: bold;
+        color: $font-color;
+    }
+  
+    &__badge {
+        border-radius: 3px;
+        padding: 7px;
         margin: 0 6px;
+        display: inline-block;
+
+        &--color {
+            background-color: $badges;
+        }        
     }
 }

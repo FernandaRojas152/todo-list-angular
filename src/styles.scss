@@ -1,16 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+/** variables*/
 $btn: #3a3a3c;
 $primary-color: #ffff;
 $border-color: #e5e6eb;
 $font-color: #1E2021;
 $badges: #F1F2F6;
+$work-badge-color: #e7463d;
+$personal-badge-color: #5954d0;
+$shop-badge-color: #5EC6F6;
 
 @font-face {
     font-family: 'Trueno';
-    src: url("./assets/fonts/Trueno.otf") format("Open Type");
+    src: url("./assets/fonts/Trueno.otf");
+}
+@font-face {
+    font-family:'TruenoLt';
+    src: url("./assets/fonts/TruenoLt.otf");
 }
 $font-main: 'Trueno', sans-serif;
+$font-secondary: 'TruenoLt', sans-serif;
 
+/** mixin functions */
 @mixin flex($justify: flex-start, $align: flex-start, $direction: row, $wrap: wrap) {
     align-items: $align;
     display: flex;
@@ -18,6 +27,8 @@ $font-main: 'Trueno', sans-serif;
     flex-flow: $direction $wrap;
 }
 
+
+/** general style*/
 html {
     margin: 0;
     padding: 0;
