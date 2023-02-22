@@ -11,16 +11,6 @@ export const initialState: TodoListState={
     todos: []
 };
 
-
-/* export const initialState:{
-    loading: boolean,
-    todos: ReadonlyArray<ITodo>
-}= {loading: false, todos:[]} */
-
-/* export const initialState: Todo[]= [
-    new Todo('Go to the Groceries Store'),
-]; */
-
 export const todosReducer= createReducer(todos,
     on(loadTodos, (state)=> {
         return {...state, loading: true};

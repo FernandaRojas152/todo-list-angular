@@ -1,12 +1,6 @@
-export interface ITodo {
-    id?: number;
-    name: String,
-    date?: String,
-    badges?: string[],
-    isCompleted: boolean,
-}
+import { ITodo } from "./todo";
 
-export let todos: ITodo[]=[
+export const TODOS: ITodo[] = [
     {
         "id": 1,
         "name": "Call John to confirm lunch appointment at noon.",
