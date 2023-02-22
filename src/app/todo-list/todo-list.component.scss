@@ -10,18 +10,20 @@ h3{
 .container{
     @include flex(center, center, column);
     margin-top: 50px;
+    /* overflow: hidden; */
+    
 }
 
 .todos-box{
     display: flex;
     flex-direction: column;
     background-color: var(--primary-color);
-    width: 500px;
-    height: 700px;
+    /* padding-right: 17px; */
     box-shadow: 3px 7px 33px 4px #E9EBEC;
     border-radius: 6px;
     border: 1px solid $border-color;
-    overflow: scroll;
+    /* overflow-y: scroll;
+    box-sizing: content-box; */
 }
 
 ul{

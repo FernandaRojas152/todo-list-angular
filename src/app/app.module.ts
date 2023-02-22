@@ -28,7 +28,8 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     StoreModule.forRoot({
       "todos": todosReducer
     }),
-    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() })
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]

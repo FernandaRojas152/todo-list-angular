@@ -10,24 +10,27 @@ import { loadTodos } from '../state/actions/todos.actions';
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.scss']
 })
-export class TodoListComponent implements OnInit{
-  todos$: Observable<ITodo[]>= of();
+export class TodoListComponent implements OnInit {
+  todos$: Observable<ITodo[]> = of();
 
-  constructor(private store: Store<ITodo>){
+  constructor(private store: Store<ITodo>) {
 
   }
 
   ngOnInit(): void {
     this.loadTodos();
-    
+
   }
 
-  loadTodos(){
-    this.todos$= this.store.select(todoSelector).pipe(
+  loadTodos() {
+    this.todos$ = this.store.select(todoSelector).pipe(
       map(state => Object.values(state))
     );
-
     this.store.dispatch(loadTodos())
+  }
+
+  addTodo(){
+    
   }
 
 }
