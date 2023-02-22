@@ -10,11 +10,15 @@ h3{
 .container{
     @include flex(center, center, column);
     margin-top: 50px;
+    overflow: hidden;
 }
 
 .todos-box{
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
     background-color: var(--primary-color);
     width: 500px;
     height: 700px;
